@@ -58,9 +58,9 @@ class main extends CI_Model
 
     public function update_skill($data, $id_skill)
     {
-        $this->db->select('*');
-        $this->db->from('');
-        $this->db->where('', $id_skill);
-        $this->db->update('', $data);
+        // $this->db->select('*');
+        // $this->db->from('');
+        // $this->db->where('', $id_skill);
+        // $this->db->update('', $data);
     }
 }
