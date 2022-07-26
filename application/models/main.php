@@ -44,4 +44,23 @@ class main extends CI_Model
             redirect('Auth');
         }
     }
+
+    //master
+    public function tambah_skill($data)
+    {
+        $this->db->insert('tb_skill', $data);
+    }
+
+    public function hapus_skill($id)
+    {
+        return $this->db->query("UPDATE tb_skill SET hapus = '1' WHERE id = '$id' ");
+    }
+
+    public function update_skill($data, $id_skill)
+    {
+        $this->db->select('*');
+        $this->db->from('');
+        $this->db->where('', $id_skill);
+        $this->db->update('', $data);
+    }
 }
